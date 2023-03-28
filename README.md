@@ -1,11 +1,11 @@
-About jupyterlab-day
-====================
+About jupyterlab-day-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-day-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/martinRenou/jupyterlab-day
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-day-feedstock/blob/main/LICENSE.txt)
 
 Summary: JupyterLab light theme inspired by the Github light theme
 
