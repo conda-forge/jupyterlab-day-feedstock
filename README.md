@@ -3,13 +3,13 @@ About jupyterlab-day-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-day-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/martinRenou/jupyterlab-day
+Home: https://github.com/jupyterlab-contrib/jupyterlab-day
 
 Package license: BSD-3-Clause
 
 Summary: JupyterLab light theme inspired by the Github light theme
 
-Development: https://github.com/martinRenou/jupyterlab-day
+Development: https://github.com/jupyterlab-contrib/jupyterlab-day
 
 Current build status
 ====================
@@ -145,5 +145,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@jtpio](https://github.com/jtpio/)
 * [@martinRenou](https://github.com/martinRenou/)
 
