@@ -1,26 +1,27 @@
 {% set name = "jupyterlab-day" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f9e2e9ba825081905c422582d8d9bb945c5045fa08d3f4a1513d72614f1f9ac7
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: c42b435b1c088d6782cc47de6370018c268d288442941cf4a6f5891bc4d24575
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
+    - hatchling >=1.5.0
+    - jupyterlab >=4.0.0,<5
+    - hatch-jupyter-builder >=0.5
+    - hatch-nodejs-version >=0.3.2
     - pip
-    - jupyterlab
-    - yarn
-    - jupyter-packaging
   run:
     - python >={{ python_min }}
 
@@ -32,12 +33,12 @@ test:
     - pip check
 
 about:
-  home: https://github.com/martinRenou/jupyterlab-day
-  summary: 'JupyterLab light theme inspired by the Github light theme'
+  home: https://github.com/jupyterlab-contrib/jupyterlab-day
+  summary: JupyterLab light theme inspired by the Github light theme
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  dev_url: https://github.com/martinRenou/jupyterlab-day
+  dev_url: https://github.com/jupyterlab-contrib/jupyterlab-day
 
 extra:
   recipe-maintainers:
