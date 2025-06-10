@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c42b435b1c088d6782cc47de6370018c268d288442941cf4a6f5891bc4d24575
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: f9e2e9ba825081905c422582d8d9bb945c5045fa08d3f4a1513d72614f1f9ac7
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
@@ -41,4 +42,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - jtpio
     - martinRenou
